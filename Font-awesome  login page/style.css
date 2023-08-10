@@ -10,7 +10,6 @@
 
 body {
   background: url("https://fontawesome.com/images/icons-gray-bg.svg"), #f7f7f7;
-  /* background-color: #f7f7f7; */
   background-size: 45%;
   background-repeat: repeat;
   font-family: "Lexend", sans-serif;
@@ -18,29 +17,26 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 10rem auto;
-  /* height: 100vh; */
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2.4rem;
 }
 
 .card {
-  /* width: 30rem; */
-  padding: 2.4rem;
+  padding: 3rem 2.4rem;
   background-color: #fff;
   box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  /* height: 20rem; */
 
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .heading {
   color: #f59f00;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -71,13 +67,13 @@ body {
 }
 
 .cta-form {
-  margin-top: 2.8rem;
+  margin: 2.8rem 0;
 }
 
 label {
   color: #183153;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -99,11 +95,9 @@ input[type="password"] {
   border-radius: 0.8rem;
 }
 
-
 input[type="email"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus {
   outline: 0.4rem solid #99e9f2;
-
 }
 
 .placeholder-icon {
@@ -120,7 +114,7 @@ input::placeholder {
   font-weight: 500;
 }
 
-.checkbox-container{
+.checkbox-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,168 +123,93 @@ input::placeholder {
 input[type="checkbox"] {
   transform: scale(1.5);
   display: inline-block;
-  margin-right: 1.2rem;
+  margin: 0 1.2rem 0 0.3rem;
 }
 
-span{
+span {
   font-size: 1rem;
 }
 
 .checkbox-link:link,
 .checkbox-link:visited {
-   text-decoration: dotted;
-   color: #1864ab;
-   transform: all ease 0.3s;
+  text-decoration: dotted;
+  color: #1864ab;
+  transform: all ease 0.3s;
 }
 
 .checkbox-link:hover,
-.checkbox-link:active{
+.checkbox-link:active {
   text-decoration: underline;
   color: #a5d8ff;
 }
 
-
-/* .btn {
-  background-color: #ffffff;
-  border-radius: 20px;
-  height: 730px;
-  width: 443px;
-  box-shadow: 5px 5px 48px #ccc8c8;
-  -webkit-box-shadow: 5px 5px 10px #ccc8c8;
-  margin-top: 60px;
-  padding: 50px 0;
-  margin-bottom: 20px;
-}
-
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(255, 153, 0);
-  font-size: 18px;
-  font-weight: 900;
-  margin-bottom: 20px;
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-h5 {
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  color: hsl(229, 23%, 23%);
-  margin-bottom: 20px;
-}
-
-.trf {
-  text-align: center;
-  color: hsla(229, 23%, 23%, 0.637);
-  font-style: normal;
-  font-size: 16px;
-  padding: 0 25px;
-  font-weight: 500;
-  line-height: 1.5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-bottom: 20px;
-}
-
-.ztn {
-  padding: 0 25px;
-}
-
-label {
-  font-size: 18px;
-  font-weight: 600;
-  color: hsl(229, 23%, 23%);
-  font-family: sans-serif;
-  margin-top: 20px;
-  display: block;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-
-label::after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background-image: url("");
-}
-
-input {
-  width: 378px;
-  height: 60px;
-  border-radius: 15px;
-  border: 2px solid hsl(229, 23%, 23%);
-}
-
-input::-webkit-input-placeholder {
-  font-family: FontAwesome;
-  font-weight: 900;
-  font-size: 25px;
-  overflow: visible;
-  vertical-align: top;
-  display: inline-block !important;
-  padding-left: 15px;
-  padding-top: 2px;
-  color: hsl(229, 23%, 23%);
-}
-
-input:hover {
-  border: 2px solid red;
-  background-color: #1098ad;
-}
-
-.ztn p {
-  color: hsla(229, 23%, 23%, 0.637);
-  font-size: 16px;
-  font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 10px;
-  margin-left: 5px;
-}
-
-button {
-  font-weight: 700;
-  margin-top: 20px;
-  width: 378px;
-  height: 60px;
-  color: hsl(229, 23%, 23%);
-  background-color: rgb(255, 153, 0);
-  border-radius: 10px;
-  border: 2px solid hsl(229, 23%, 23%);
+.btn:link,
+.btn:visited {
+  background-color: #ffd43b;
+  width: 100%;
+  border: 0.2rem solid hsl(229, 23%, 23%);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   box-shadow: 0px 13px 1px 0px hsl(229, 23%, 23%);
-  cursor: pointer;
-}
+  padding: 1.2rem;
+  transition: all ease 0.3s;
 
-.rdf {
-  color: hsl(229, 23%, 23%);
-  font-size: 16px;
-  font-weight: 500;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: inline-block;
   text-align: center;
 }
 
-.rdf a:link {
-  color: blue;
+.btn:hover {
+  background-color: #ff9900;
+}
+
+.btn:active {
+  outline: 0.4rem solid #99e9f2;
+  box-shadow: none;
+  border: none;
+  color: inherit;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  font-size: 1.4rem;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer a:link,
+.footer a:visited {
   text-decoration: wavy;
 }
 
-.rdf a:visited {
-  color: blue;
-  text-decoration: wavy;
-}
-
-.rdf a:hover {
+.footer a:hover,
+.footer a:active {
   color: #1098ad;
-  text-decoration: underline;
-} */ */
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 32em) {
+  html {
+    font-size: 59.37%;
+  }
+}
+
+@media (max-width: 21em) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    padding: 2.8rem 1.6rem;
+  }
+}
