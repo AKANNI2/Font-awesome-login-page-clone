@@ -202,6 +202,11 @@ span {
   html {
     font-size: 59.37%;
   }
+
+  .placeholder-icon {
+    top: 1.5rem;
+    left: 1.2rem;
+  }
 }
 
 @media (max-width: 21em) {
@@ -211,5 +216,10 @@ span {
 
   .card {
     padding: 2.8rem 1.6rem;
+  }
+
+  .placeholder-icon {
+    top: 1.7rem;
+    left: 1.2rem;
   }
 }
